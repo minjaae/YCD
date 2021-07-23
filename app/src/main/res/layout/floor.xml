@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9fa8da"
+    android:orientation="vertical"
+    tools:context=".Floor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="you CAN do"
+        android:fontFamily="@font/dunggeunmo"
+        android:gravity="center"
+        android:textSize="32dp"
+        android:textColor="#fffde7"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"></TextView>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dunggeunmo"
+        android:gravity="center"
+        android:textSize="32dp"
+        android:text="어디 몇층"
+        android:textColor="#fffde7"></TextView>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/trash"
+                android:padding="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#10000000"
+                android:fontFamily="@font/dunggeunmo"
+                android:textColor="#fffde7"
+                android:text="일반"
+
+                android:layout_weight="1"></Button>
+            <Button
+                android:id="@+id/recycle"
+                android:padding="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#10000000"
+                android:fontFamily="@font/dunggeunmo"
+                android:textColor="#fffde7"
+                android:text="재활용"
+                android:layout_weight="1"></Button>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

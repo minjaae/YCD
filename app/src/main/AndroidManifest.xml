@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.you.Cando">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".FirstRecycleSJ"></activity>
+        <activity android:name=".SecondFloor" />
+        <activity android:name=".Floor" />
+        <activity android:name=".Second" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

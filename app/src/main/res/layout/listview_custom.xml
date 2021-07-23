@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+
+            android:orientation="horizontal">
+            <com.dinuscxj.progressbar.CircleProgressBar
+                android:id="@+id/circlebar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:progress_end_color="#512E5F"
+                app:progress_start_color="#512E5F"
+                app:progress_stroke_cap="round"
+                app:progress_stroke_width="2dp "
+                app:progress_text_size="10sp"
+                app:progress_text_color = "#fffde7"
+                app:style="solid_line" />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_height="wrap_content"
+                    android:text="name.."/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:id="@+id/tv_contents"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="contents.." />
+
+            </LinearLayout>
+
+            //marker
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/marker" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

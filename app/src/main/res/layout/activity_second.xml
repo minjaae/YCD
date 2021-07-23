@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9fa8da"
+    tools:context=".Second">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="you CAN do"
+        android:fontFamily="@font/dunggeunmo"
+        android:gravity="center"
+        android:textSize="32dp"
+        android:textColor="#fffde7"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"></TextView>
+
+
+    <ImageView
+        android:id="@+id/school"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/school_sj"></ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--1번-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/showSJ"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="수정관"
+                        android:textSize="26dp"
+                        android:textStyle="bold"
+                        android:textColor="#fffde7"
+                        android:fontFamily="@font/dunggeunmo"
+                        />
+                    <ImageView
+                        android:id="@+id/sjHere"
+                        android:src="@drawable/marker"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        />
+
+                </LinearLayout>
+
+                <ListView
+                    android:layout_weight="1"
+                    android:id="@+id/listSJ"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:visibility="gone"
+                    android:fontFamily="@font/dunggeunmo"
+                    ></ListView>
+            </LinearLayout>
+
+
+
+
+
+
+            <!--2번-->
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/showSS"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="성신관"
+                        android:textSize="26dp"
+                        android:textStyle="bold"
+                        android:textColor="#fffde7"
+                        android:fontFamily="@font/dunggeunmo"
+                        />
+
+                    <ImageView
+                        android:id="@+id/ssHere"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/marker" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/listSS"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ListView>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
